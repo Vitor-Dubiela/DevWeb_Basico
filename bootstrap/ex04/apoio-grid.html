@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+
+    <title>Bootstrap - Sistema de grids</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+  </head>
+
+  <body>
+
+    <div class="container bg-success">
+      Conteúdo do site
+    </div>   
+
+    <br> 
+
+    <div class="container bg-success">
+      <div class="row ">
+        <div class="bg-warning">
+          Área 01
+        </div>
+        <div class="bg-primary">
+          Área 02
+        </div>
+      </div>
+    </div>    
+
+    <br>
+
+    <div class="container bg-success">
+      <div class="row">
+        <div class="bg-warning col-2">
+          Área 01
+        </div>
+        <div class="bg-danger col-10">
+          Área 02
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="container bg-success">
+      <div class="row">
+        <div class="bg-primary col-6 col-sm-2 col-md-10 col-lg-6 col-xl-1">
+          Área 03
+        </div>
+        <div class="bg-secondary col-6 col-sm-10 col-md-2 col-lg-6 col-xl-11">
+          Área 04
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="container bg-success">
+      <div class="row">
+        <!-- Se não for informado o tamanho da coluna, ele irá ocupar as 12, seguindo o modelo mobile first -->
+        <div class="bg-white border p-3  col-sm-6 col-md-4"> 
+          <h2>Lorem ipsum dolorem sit amet</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, repellendus! Quisquam facere voluptatem deserunt sed ratione. At suscipit officiis sunt, magni possimus reprehenderit nobis optio, quis doloribus commodi quod incidunt?</p>
+          <button class="btn btn-warning">Leia mais</button>
+        </div>
+        <div class="bg-white border p-3 col-sm-6 col-md-4">
+          <h2>Lorem ipsum dolorem sit amet</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, repellendus! Quisquam facere voluptatem deserunt sed ratione. At suscipit officiis sunt, magni possimus reprehenderit nobis optio, quis doloribus commodi quod incidunt?</p>
+          <button class="btn btn-warning">Leia mais</button>
+        </div>
+        <div class="bg-white border p-3 col-sm-12 col-md-4">
+          <h2>Lorem ipsum dolorem sit amet</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, repellendus! Quisquam facere voluptatem deserunt sed ratione. At suscipit officiis sunt, magni possimus reprehenderit nobis optio, quis doloribus commodi quod incidunt?</p>
+          <button class="btn btn-warning">Leia mais</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Configuração do grid -->
+
+    <div class="container border mt-3">
+      <h2>Largura fixa</h2>
+      <div class="row">
+        <div class="bg-primary border col">Área 01</div>
+        <div class="bg-primary border col">Área 02</div>
+        <div class="bg-primary border col">Área 03</div>
+        <div class="bg-primary border col">Área 04</div>
+      </div>
+
+      <h2>Largura automática (auto-layout)</h2>
+      <div class="row">
+        <div class="bg-success border col-3">Área 01</div>
+        <div class="bg-success border col">Área 02</div>
+        <div class="bg-success border col">Área 03</div>
+      </div>
+
+      <h2>Largura igual empilhada</h2>
+      <div class="row">
+        <div class="bg-success border col-sm">Área 01</div>
+        <div class="bg-success border col-sm">Área 02</div>
+        <div class="bg-success border col-sm">Área 03</div>
+      </div>
+      
+      <h2>Ordenando</h2>
+      <div class="row">
+        <div class="bg-success border col order-3">Área 01</div>
+        <div class="bg-success border col order-2">Área 02</div>
+        <div class="bg-success border col order-1">Área 03</div>
+      </div>
+      
+      <h2>Offset</h2>
+      <div class="row">
+        <div class="bg-success border col-md-6 offset-md-3">Login ..</div>
+      </div>
+      
+      <h2>Offset múltiplos alinhamentos</h2>
+      <div class="row">
+        <div class="bg-success border col-md-3 offset-md-6">Login ..</div>
+        <div class="bg-success border col-md-3 offset-md-2">Login ..</div>
+        <div class="bg-success border col-md-3 offset-md-3">Login ..</div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
