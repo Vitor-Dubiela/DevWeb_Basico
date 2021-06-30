@@ -10,7 +10,20 @@
     <script>
         var nome = prompt('Digite seu nome: ')
         var idade = prompt('Digite sua idade: ')
+        var largura = prompt('Digite a largura do terreno: ')
+        var comprimento = prompt('Digite o comprimento do terreno: ')
+        var area = calcularAreaTerreno(largura, comprimento)
+
+        function calcularAreaTerreno(largura, comprimento){
+            var area = largura * comprimento;
+
+            return area;
+        }
+
         document.write('<h1>Boa noite, ' + nome + ', tudo bem? Estou vendo que você possui ' + idade + ' anos.</h1>')
+        document.write('<br>')
+        document.write('<h1>Área do terreno: ' + area + ' </h1>')        
+
     </script>
 </head>
 
